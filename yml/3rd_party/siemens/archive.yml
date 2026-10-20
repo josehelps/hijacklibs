@@ -14,6 +14,7 @@ VulnerableExecutables:
 Resources:
   - https://www.virustotal.com/gui/file/3fdcc7d7d049a89711fb31fb236940a1c5a09d899143ffd20c3c41fb1f2cf491
   - https://productcert.siemens.com/productcert/html/ssa-580366.html
+  - https://productcert.siemens.com/news/2026/10/19/active-exploitation-of-cve-2026-110936-in-siemens-software-center/
 Acknowledgements:
   - Name: 'Jose Oregon'
     Company: 'Huntress Labs'
