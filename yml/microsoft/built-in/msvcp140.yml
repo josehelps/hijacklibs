@@ -26,12 +26,18 @@ VulnerableExecutables:
       ProductName: 'Office Licensing Admin Access Provider'
       InternalName: 'liclua.exe'
       OriginalFilename: 'liclua.exe'
+- Path: 'LineAppMgr.exe'
+  Type: Sideloading
+  Condition: 'LINE messaging application, observed in BRONZE SANDCASTLE intrusions'
 Resources:
 - https://unit42.paloaltonetworks.com/preventing-clickfix-attack-vector/
 - https://www.virustotal.com/gui/file/cbaf513e7fd4322b14adcc34b34d793d79076ad310925981548e8d3cff886527
 - https://connar.github.io/posts/dll-hijacking-journey/
+- https://www.sophos.com/en-us/blog/bronze-sandcastle-deploys-modified-meterpreter-shells
 Acknowledgements:
 - Name: 'Swachchhanda Shrawan Poudel'
   Company: 'Nextron Systems'
   Twitter: '@_swachchhanda_'
 - Name: 'connar'
+- Name: Gabor Szappanos
+  Company: Sophos

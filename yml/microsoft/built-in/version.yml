@@ -294,6 +294,9 @@ VulnerableExecutables:
 - Path: '%PROGRAMFILES%\Cisco Spark\CiscoCollabHost.exe'
   Type: Sideloading
   Condition: CiscoCollabHost.exe (Webex App) statically imports version.dll. Observed in FUDCrypt side-load packaging.
+- Path: 'vmmap.exe'
+  Type: Sideloading
+  Condition: 'Sysinternals VMMap, observed in BRONZE SANDCASTLE intrusions'
 Resources:
 - https://securityintelligence.com/posts/windows-features-dll-sideloading/
 - https://github.com/xforcered/WFH
@@ -305,6 +308,7 @@ Resources:
 - https://www.iobit.com/product-manuals/unlocker-help
 - https://community.ccleaner.com/t/c-program-files-ccleaner-ccleanerbugreport-exe-as-part-of-v6-04-pro/77580
 - https://help.webex.com/article/dluqwo/Executable-files-used-by-Webex-App-on-Windows
+- https://www.sophos.com/en-us/blog/bronze-sandcastle-deploys-modified-meterpreter-shells
 Acknowledgements:
 - Name: Chris Spehn
   Twitter: '@ConsciousHacker'
@@ -312,3 +316,5 @@ Acknowledgements:
   Twitter: '@an0n_r0'
 - Name: Josh Allman
   Twitter: '@xorjosh'
+- Name: Gabor Szappanos
+  Company: Sophos

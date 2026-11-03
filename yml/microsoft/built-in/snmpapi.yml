@@ -23,8 +23,14 @@ VulnerableExecutables:
   - Subject: CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
     Issuer: CN=Microsoft Windows Production PCA 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
     Type: Catalog
+- Path: 'bginfo64.exe'
+  Type: Sideloading
+  Condition: 'Sysinternals BGInfo, observed in BRONZE SANDCASTLE intrusions'
 Resources:
 - https://wietze.github.io/blog/hijacking-dlls-in-windows
+- https://www.sophos.com/en-us/blog/bronze-sandcastle-deploys-modified-meterpreter-shells
 Acknowledgements:
 - Name: Wietze
   Twitter: '@wietze'
+- Name: Gabor Szappanos
+  Company: Sophos

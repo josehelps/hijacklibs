@@ -1,0 +1,25 @@
+---
+Name: sbiedll.dll
+Author: Jose Enrique Hernandez
+Created: 2026-11-02
+Vendor: Sandboxie
+ExpectedLocations:
+  - '%PROGRAMFILES%\Sandboxie'
+  - '%PROGRAMFILES%\Sandboxie-Plus'
+VulnerableExecutables:
+  - Path: 'SandboxieWUAU.exe'
+    Type: Sideloading
+  - Path: 'Start.exe'
+    Type: Sideloading
+    Condition: 'Renamed Sandboxie executable, as observed in BRONZE SANDCASTLE intrusions'
+Resources:
+  - https://www.sophos.com/en-us/blog/bronze-sandcastle-deploys-modified-meterpreter-shells
+Acknowledgements:
+  - Name: Gabor Szappanos
+    Company: Sophos
+  - Name: Colin Cowie
+    Company: Sophos
+  - Name: Jordon Olness
+    Company: Sophos
+  - Name: Morgan Demboski
+    Company: Sophos
