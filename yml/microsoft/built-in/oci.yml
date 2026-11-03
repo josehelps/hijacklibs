@@ -13,3 +13,7 @@ VulnerableExecutables:
 Resources:
 - https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/backdoor-at-the-end-of-the-icmp-tunnel/
 - https://www.crowdstrike.com/blog/4-ways-adversaries-hijack-dlls/
+- https://vega.io/blog/trojanized-rvtools-python-stager-linked-to-unc2465
+Acknowledgements:
+- Name: Vega Threat Research
+  Twitter: '@Vega_Threat'
